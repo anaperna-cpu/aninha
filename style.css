@@ -1,0 +1,164 @@
+/* Configurações Globais e Variáveis de Cores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f9f4; /* Fundo verde bem clarinho */
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Cabeçalho com Temática Agrinho (Verde Floresta e Terra) */
+header {
+    background: linear-gradient(135deg, #1b4d3e, #2e7d32);
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 6px solid #8d6e63; /* Detalhe marrom cor de terra */
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #c8e6c9;
+    font-style: italic;
+}
+
+/* Container Principal */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Seção de Destaque / Manifesto */
+.manifesto {
+    background-color: #ffffff;
+    border-left: 6px solid #2e7d32;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.manifesto h2 {
+    color: #1b4d3e;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+}
+
+/* Organização em Grelha (Colunas) para o Conteúdo */
+.conteudo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+/* Estilização dos Cards de Conteúdo */
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    border-top: 5px solid #8d6e63; /* Topo marrom */
+    transition: transform 0.2s;
+}
+
+.card.verde-top {
+    border-top: 5px solid #2e7d32; /* Topo verde */
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #1b4d3e;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed #e0e0e0;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #455a64;
+}
+
+/* Listas Decoradas */
+ul {
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+    color: #455a64;
+}
+
+/* Marcador de lista customizado com emoji de folha */
+li::before {
+    content: "🌿";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 1rem;
+}
+
+strong {
+    color: #1b4d3e;
+}
+
+/* Caixa de Destaque / Dicas Ecológicas */
+.callout-box {
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.callout-box h4 {
+    color: #2e7d32;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 2px solid #e0e0e0;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #78909c;
+}
+
+/* Responsividade para ecrãs de telemóvel */
+@media (max-width: 768px) {
+    .conteudo-grid {
+        grid-template-columns: 1fr;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
